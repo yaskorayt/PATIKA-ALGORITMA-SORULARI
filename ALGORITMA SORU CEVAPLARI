@@ -1,0 +1,54 @@
+//1 SORU CEVABI
+Console.Write("Sayı Giriniz: ");
+int n = Convert.ToInt32(Console.ReadLine());
+int[] numberList = new int[n];
+for (int i = 0; i < numberList.Length; i++)
+{
+    Console.Write($"{i+1}.Sayı: ");
+    numberList[i] = Convert.ToInt32(Console.ReadLine());
+}
+foreach (int number in numberList)
+{
+    if (number % 2 == 0)
+    {
+        Console.WriteLine(number);
+    } 
+}
+
+//2. SORU CEVABI
+Console.Write("Sayı Giriniz: ");
+int m = Convert.ToInt32(Console.ReadLine());
+Console.Write("Sayı Giriniz: ");
+int n = Convert.ToInt32(Console.ReadLine());
+int[] numberList = new int[n];
+for (int i = 0; i < numberList.Length; i++)
+{
+    Console.Write($"{i + 1}.Sayı: ");
+    numberList[i] = Convert.ToInt32(Console.ReadLine());
+}
+foreach (int number in numberList)
+{
+    if (number % m == 0 || number == m)
+    {
+        Console.WriteLine(number);
+    }
+}
+
+//3. SORU CEVABI
+Console.Write("Sayı Giriniz: ");
+int n = Convert.ToInt32(Console.ReadLine());
+string[] wordList = new string[n];
+for (int i = 0; i < wordList.Length; i++)
+{
+    Console.Write($"{i + 1}.Kelime: ");
+    wordList[i] = Console.ReadLine();
+}
+foreach (string word in wordList.Reverse())
+{
+    Console.WriteLine(word);
+}
+
+//4. SORU CEVABI
+Console.Write("Cümle Yazınız: ");
+string sentence = Console.ReadLine();
+Console.WriteLine(sentence.Length);
